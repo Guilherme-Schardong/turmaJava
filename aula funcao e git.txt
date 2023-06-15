@@ -1,0 +1,125 @@
+console.log('ola funcoes')
+
+
+
+function saudacao(){
+	console.log('ola funcoes')
+}
+() entrada no caso de saudação nao recebe nada
+
+
+saudacao()
+
+
+
+
+
+
+
+para melhor estruturação por habito
+utilizamos uma funcao main ou principal
+
+
+
+
+
+
+
+
+var prompt = require('prompt-sync')();
+
+
+function calcular_consumo_viagem(tempo, velocidade){       ////  os nomes dos paramentro nao importa 
+								o que importa é a ordem
+    const distancia = tempo * velocidade;                         
+    const consumo = distancia / 12;
+
+    return consumo;
+}
+
+
+function main(){
+    console.log('consumo veiculo');
+
+    //entrada
+    const tempo = Number(prompt('Tempo (h): '));
+    const velocidae = Number(prompt('Velocidae (km/h): '));
+
+
+    // processamento
+    const consumo = calcular_consumo_viagem(tempo, velocidae);     //  argumentos na funcão sao os paramentros 
+									na definicição de entrada chama se parametros
+									na evocação da funçao chama se argumentos
+									no principal sao argumentos
+									só pode atribuir funções a variaveis quando as funções tem retorno
+									paramentros sao variaveis locais
+
+    //saida
+    console.log(consumo.toFixed(3));
+
+}
+
+
+
+
+
+
+exercicio de teste  calcular o aumaneto salarias de 25% de um funcionario
+
+
+
+encapsulçamento e generalizaçao
+
+no exercicio a funcaçao de calcular o aumento 
+modificar de 25 fixao para uma valor variavel
+
+calcula aumento salarial nome
+clacular percentual nome generico
+
+calcular o desconto da previdencia
+
+
+com a entrada de 3 valores ordenalos de forma crescente
+
+
+
+
+
+
+
+
+string 
+
+sao imutaveis nao pode ser alterada independente do tipo da varial o string é imutavel
+pode ser feito concatenações mas nao pode mudar, pode fazer uma reeatribuição mas nao mudar
+
+nas string voce percorre com for ou while 
+e pode usar o lenght tbm
+
+percoree de mesmo modo que um vetor  com os []
+
+
+conversar sobre tabela ascii
+
+
+
+variavel.charCodeAt(posicao da variavel[]) passando a posição ele retorna o valor da tabela ascii
+
+
+String.fromCharCode() passando o numero ele retorna o valor desse numero na tabela ascii
+
+
+variavel.split(' ')   passado qual o parametro para quebrar a string em um array neste exemplo no espaço
+		      retornando um array com os valores o ponto de quebra some
+
+array.join(' ') passa o paramentro que vai juntar uma coleção em uma string
+
+
+
+
+function escrever em ascii(frase){
+	for(let i = 0; i<frase.leght; i++){
+	CONSOLE.LOG(frase.charcodeAt(i))
+}
+}
+
